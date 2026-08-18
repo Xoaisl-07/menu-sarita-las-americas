@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Menú Sarita Las Americas - Heladería y postres." />
+  <title>Menu Sarita Las Americas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar container">
+      <a class="brand" href="#inicio" aria-label="Menu Sarita Las Americas">
+        <span class="brand-mark">🍦</span>
+        <span>
+          <strong>Menu Sarita</strong>
+          <small>Las Americas</small>
+        </span>
+      </a>
+
+      <a class="nav-whatsapp" href="https://wa.me/18097816855" target="_blank" rel="noopener noreferrer">
+        <span>💬</span> WhatsApp
+      </a>
+    </nav>
+
+    <div class="hero-content container" id="inicio">
+      <div class="hero-text">
+        <span class="eyebrow">HELADERÍA • POSTRES • MOMENTOS FELICES</span>
+        <h1>Tu antojo empieza aquí.</h1>
+        <p>Consulta la disponibilidad de nuestros favoritos directamente por WhatsApp.</p>
+
+        <div class="hero-actions">
+          <a class="primary-btn" href="#menu">Ver menú</a>
+          <a class="secondary-btn" href="https://wa.me/18097816855?text=Hola%2C%20quiero%20consultar%20la%20disponibilidad%20de%20un%20producto%20de%20Menu%20Sarita%20Las%20Americas." target="_blank" rel="noopener noreferrer">
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="floating-card card-1">🍓</div>
+        <div class="floating-card card-2">🍫</div>
+        <div class="floating-card card-3">🍪</div>
+        <div class="icecream-illustration">🍨</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu-section container" id="menu">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow dark">NUESTRO MENÚ</span>
+          <h2>Favoritos de la casa</h2>
+          <p>Selecciona un producto para preguntar por su disponibilidad.</p>
+        </div>
+
+        <div class="search-wrap">
+          <label for="searchInput" class="sr-only">Buscar producto</label>
+          <input id="searchInput" type="search" placeholder="Buscar producto..." autocomplete="off" />
+          <span>🔎</span>
+        </div>
+      </div>
+
+      <div class="category-filters" id="categoryFilters" aria-label="Filtrar por categoría">
+        <button class="filter-btn active" data-category="Todos">Todos</button>
+        <button class="filter-btn" data-category="Helados">Helados</button>
+        <button class="filter-btn" data-category="Batidas">Batidas</button>
+        <button class="filter-btn" data-category="Postres">Postres</button>
+        <button class="filter-btn" data-category="Especiales">Especiales</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid"></div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <div>🍦</div>
+        <h3>No encontramos ese producto</h3>
+        <p>Prueba con otro nombre o revisa otra categoría.</p>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-card container">
+        <div>
+          <span class="eyebrow">¿TIENES UNA DUDA?</span>
+          <h2>Pregúntanos por WhatsApp</h2>
+          <p>Consulta disponibilidad antes de llegar a la heladería.</p>
+        </div>
+        <a class="whatsapp-big-btn" href="https://wa.me/18097816855?text=Hola%2C%20quisiera%20consultar%20la%20disponibilidad%20de%20un%20producto." target="_blank" rel="noopener noreferrer">
+          💬 Hablar por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong>🍦 Menu Sarita Las Americas</strong>
+        <p>Una experiencia dulce, simple y cercana.</p>
+      </div>
+      <a href="https://wa.me/18097816855" target="_blank" rel="noopener noreferrer">+1 809-781-0585</a>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Menu Sarita Las Americas · Página piloto</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
